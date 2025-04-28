@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+}
+
+header div {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  font-family: "Lexend", sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+li a:hover {
+  border-bottom: 1px solid #fff;
+  transition: 0.5s;
+}
+
+#participe {
+  background-color: blueviolet;
+  color: #fff !important;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#participe:hover {
+  background-color: green;
+  transform: translateY(-2px);
+}
+
+h2 {
+  font-family: "Gabarito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Inter", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.secao-sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 5%;
+    background: #f8f9fa;
+}
+
+.sobre-conteudo {
+    flex: 1;
+    min-width: 50%;
+}
+
+.sobre-imagem {
+    flex: 1;
+    min-width: 40%;
+}
+
+.sobre-imagem img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .secao-sobre {
+        flex-direction: column;
+    }
+}
+
+/* QUEM SOMOS - Imagem à esquerda */
+.secao-quem-somos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 5%;
+    background: #fff;
+}
+
+.quem-somos-imagem {
+    flex: 1;
+    order: -1; /* Força a imagem para a esquerda */
+    min-width: 40%;
+}
+
+.quem-somos-conteudo {
+    flex: 1;
+}
+
+.quem-somos-imagem img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.destaque {
+    background: #f0f8ff;
+    padding: 12px;
+    border-left: 3px solid #4cc9f0;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .secao-quem-somos {
+        flex-direction: column;
+    }
+    .quem-somos-imagem {
+        order: 0; /* Reset da ordem em mobile */
+    }
+}
+
+/* COORDENAÇÃO */
+.secao-coordenacao {
+    padding: 60px 5%;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.coordenadores-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coordenador-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center bottom;
+    position: relative;
+    z-index: 1;
+}
+
+.coordenador-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.coordenador-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.coordenador-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.coordenador-card h3 {
+  transition: color 0.3s ease;
+  color: #333;
+}
+
+.coordenador-card:hover h3 {
+  color: #4cc9f0;
+}
+
+.coordenador-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4cc9f0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.coordenador-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* ATIVIDADES */
+.secao-atividades {
+    padding: 60px 5%;
+    background: #fff;
+}
+
+.atividades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.atividade-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.atividade-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.atividade-texto {
+    padding: 20px;
+}
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: orange;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.social-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Ícones brancos */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
