@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>NUGEDS</title>
+
+    <script>
+      document.querySelector('.menu-hamburguer').addEventListener('click', function() {
+        const nav = document.querySelector('.nav-menu');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        nav.classList.toggle('active');
+      });
+    </script>
   </head>
   <body>
     <header>
-      <div>
+      <div class="header-container">
         <img
           src="assets/NUGEDS_LOGO_COLORIDA_FUNDO_TRANSPARENTE_VERTIC.width-800.png"
-          alt="Identidade Visual NUGEDS"
+          alt="Identidade Visual NUGEDS" class="logo"
         />
 
-        <nav>
+        <nav class="nav-menu">
           <ul>
             <li>
               <a href="#">Início</a>
