@@ -6,6 +6,11 @@ Este projeto foi criado com o objetivo de apresentar de forma clara, acolhedora 
 
 ---
 
+## Acesse o Projeto
+https://nugedsifcebvg.vercel.app/
+
+---
+
 ## 📌 Seções da Página
 
 A landing page contém uma **barra de navegação fixa** com os seguintes links:
