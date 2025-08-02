@@ -25,15 +25,6 @@ A landing page contém uma **barra de navegação fixa** com os seguintes links:
 
 ---
 
-## 📁 Estrutura de Arquivos
-│
-├── index.html # Página principal da landing page
-├── style.css # Arquivo de estilos
-├── assets/ # (Opcional) Pasta para imagens, ícones, etc.
-└── README.md # Documentação do projeto
-
----
-
 ## 🌟 Objetivos do Projeto
 - Tornar o NUGEDS mais acessível à comunidade acadêmica e externa.
 - Oferecer um canal informativo, acolhedor e visualmente atrativo.
