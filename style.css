@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -161,6 +162,10 @@ p {
     min-width: 50%;
 }
 
+.sobre-conteudo h2 {
+  margin-bottom: 2px;
+}
+
 .sobre-imagem {
     flex: 1;
     min-width: 40%;
@@ -210,6 +215,10 @@ p {
     flex: 1;
 }
 
+.quem-somos-conteudo h2 {
+  margin-bottom: 2px;
+}
+
 .quem-somos-imagem img {
     width: 80%;
     border-radius: 8px;
@@ -233,6 +242,10 @@ p {
     padding: 60px 5%;
     background: #f8f9fa;
     text-align: center;
+}
+
+.secao-coordenacao h2 {
+  margin-bottom: 4px;
 }
 
 .coordenadores-container {
@@ -281,10 +294,12 @@ p {
 .coordenador-card h3 {
   transition: color 0.3s ease;
   color: #333;
+  font-family: "DM Serif Text", serif;
+  font-weight: 300;
 }
 
 .coordenador-card:hover h3 {
-  color: #4cc9f0;
+  color: blueviolet;
 }
 
 .coordenador-card::after {
@@ -317,6 +332,11 @@ p {
 .secao-atividades {
     padding: 60px 5%;
     background: #fff;
+}
+
+.secao-atividades h2 {
+  margin-bottom: 4px;
+  text-align: center;
 }
 
 .atividades-container {
